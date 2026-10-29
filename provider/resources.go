@@ -59,6 +59,11 @@ func Provider() tfbridge.ProviderInfo {
 		// Upstream does not mark these as sensitive, but they carry credentials
 		// (e.g. Kinesis/mParticle keys, integration auth details).
 		Resources: map[string]*tfbridge.ResourceInfo{
+			"launchdarkly_audit_log_subscription": {
+				Fields: map[string]*tfbridge.SchemaInfo{
+					"config": {Secret: tfbridge.True()},
+				},
+			},
 			"launchdarkly_destination": {
 				Fields: map[string]*tfbridge.SchemaInfo{
 					"config": {Secret: tfbridge.True()},

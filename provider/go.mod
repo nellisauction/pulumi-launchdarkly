@@ -5,7 +5,7 @@ go 1.27.1
 replace github.com/hashicorp/terraform-plugin-sdk/v2 => github.com/pulumi/terraform-plugin-sdk/v2 v2.0.0-20260318212141-5525259d096b
 
 require (
-	github.com/launchdarkly/terraform-provider-launchdarkly v1.7.2-0.20261028120507-ebb166743915
+	github.com/launchdarkly/terraform-provider-launchdarkly v1.7.2-0.20261029181208-0595b8305763
 	github.com/pulumi/pulumi-terraform-bridge/v3 v3.140.0
 )
 

@@ -40,7 +40,7 @@ export interface GetAuditLogSubscriptionArgs {
      */
     id: string;
     /**
-     * The integration key. Supported integration keys are `chronosphere`, `cloudtrail`, `datadog`, `dynatrace`, `dynatrace-v2`, `elastic`, `grafana`, `honeycomb`, `jira`, `kosli`, `last9`, `logdna`, `mattermost`, `msteams`, `new-relic-apm`, `pagerduty`, `signalfx`, `slack`, `splunk`, and `vercel-native`.
+     * The integration key. Supported integration keys are `chronosphere`, `cloudtrail`, `datadog`, `dynatrace`, `dynatrace-v2`, `elastic`, `grafana`, `honeycomb`, `jira`, `kosli`, `last9`, `logdna`, `mattermost`, `msteams`, `new-relic-apm`, `new-relic-v2`, `pagerduty`, `signalfx`, `slack`, `splunk`, and `vercel-native`.
      */
     integrationKey: string;
 }
@@ -58,7 +58,7 @@ export interface GetAuditLogSubscriptionResult {
      */
     readonly id: string;
     /**
-     * The integration key. Supported integration keys are `chronosphere`, `cloudtrail`, `datadog`, `dynatrace`, `dynatrace-v2`, `elastic`, `grafana`, `honeycomb`, `jira`, `kosli`, `last9`, `logdna`, `mattermost`, `msteams`, `new-relic-apm`, `pagerduty`, `signalfx`, `slack`, `splunk`, and `vercel-native`.
+     * The integration key. Supported integration keys are `chronosphere`, `cloudtrail`, `datadog`, `dynatrace`, `dynatrace-v2`, `elastic`, `grafana`, `honeycomb`, `jira`, `kosli`, `last9`, `logdna`, `mattermost`, `msteams`, `new-relic-apm`, `new-relic-v2`, `pagerduty`, `signalfx`, `slack`, `splunk`, and `vercel-native`.
      */
     readonly integrationKey: string;
     /**
@@ -112,7 +112,7 @@ export interface GetAuditLogSubscriptionOutputArgs {
      */
     id: pulumi.Input<string>;
     /**
-     * The integration key. Supported integration keys are `chronosphere`, `cloudtrail`, `datadog`, `dynatrace`, `dynatrace-v2`, `elastic`, `grafana`, `honeycomb`, `jira`, `kosli`, `last9`, `logdna`, `mattermost`, `msteams`, `new-relic-apm`, `pagerduty`, `signalfx`, `slack`, `splunk`, and `vercel-native`.
+     * The integration key. Supported integration keys are `chronosphere`, `cloudtrail`, `datadog`, `dynatrace`, `dynatrace-v2`, `elastic`, `grafana`, `honeycomb`, `jira`, `kosli`, `last9`, `logdna`, `mattermost`, `msteams`, `new-relic-apm`, `new-relic-v2`, `pagerduty`, `signalfx`, `slack`, `splunk`, and `vercel-native`.
      */
     integrationKey: pulumi.Input<string>;
 }
