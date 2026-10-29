@@ -42,15 +42,31 @@ func Provider() tfbridge.ProviderInfo {
 				Default: &tfbridge.DefaultInfo{
 					EnvVars: []string{"LAUNCHDARKLY_ACCESS_TOKEN"},
 				},
+				Secret: tfbridge.True(),
 			},
 			"oauth_token": {
 				Default: &tfbridge.DefaultInfo{
 					EnvVars: []string{"LAUNCHDARKLY_OAUTH_TOKEN"},
 				},
+				Secret: tfbridge.True(),
 			},
 			"api_host": {
 				Default: &tfbridge.DefaultInfo{
 					EnvVars: []string{"LAUNCHDARKLY_API_HOST"},
+				},
+			},
+		},
+		// Upstream does not mark these as sensitive, but they carry credentials
+		// (e.g. Kinesis/mParticle keys, integration auth details).
+		Resources: map[string]*tfbridge.ResourceInfo{
+			"launchdarkly_destination": {
+				Fields: map[string]*tfbridge.SchemaInfo{
+					"config": {Secret: tfbridge.True()},
+				},
+			},
+			"launchdarkly_integration_delivery_configuration": {
+				Fields: map[string]*tfbridge.SchemaInfo{
+					"config": {Secret: tfbridge.True()},
 				},
 			},
 		},

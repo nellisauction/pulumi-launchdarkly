@@ -49,14 +49,16 @@ export class Provider extends pulumi.ProviderResource {
         let resourceInputs: pulumi.Inputs = {};
         opts = opts || {};
         {
-            resourceInputs["accessToken"] = (args?.accessToken) ?? utilities.getEnv("LAUNCHDARKLY_ACCESS_TOKEN");
+            resourceInputs["accessToken"] = (args?.accessToken ? pulumi.secret(args.accessToken) : undefined) ?? utilities.getEnv("LAUNCHDARKLY_ACCESS_TOKEN");
             resourceInputs["apiHost"] = (args?.apiHost) ?? utilities.getEnv("LAUNCHDARKLY_API_HOST");
             resourceInputs["archiveFlagsOnDestroy"] = pulumi.output(args?.archiveFlagsOnDestroy).apply(JSON.stringify);
             resourceInputs["httpTimeout"] = pulumi.output(args?.httpTimeout).apply(JSON.stringify);
             resourceInputs["maxConcurrency"] = pulumi.output(args?.maxConcurrency).apply(JSON.stringify);
-            resourceInputs["oauthToken"] = (args?.oauthToken) ?? utilities.getEnv("LAUNCHDARKLY_OAUTH_TOKEN");
+            resourceInputs["oauthToken"] = (args?.oauthToken ? pulumi.secret(args.oauthToken) : undefined) ?? utilities.getEnv("LAUNCHDARKLY_OAUTH_TOKEN");
         }
         opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
+        const secretOpts = { additionalSecretOutputs: ["accessToken", "oauthToken"] };
+        opts = pulumi.mergeOptions(opts, secretOpts);
         super(Provider.__pulumiType, name, resourceInputs, opts);
     }
 

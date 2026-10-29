@@ -59,7 +59,8 @@
                     "environment": [
                         "LAUNCHDARKLY_ACCESS_TOKEN"
                     ]
-                }
+                },
+                "secret": true
             },
             "apiHost": {
                 "type": "string",
@@ -89,7 +90,8 @@
                     "environment": [
                         "LAUNCHDARKLY_OAUTH_TOKEN"
                     ]
-                }
+                },
+                "secret": true
             }
         }
     },
@@ -2457,7 +2459,8 @@
         "properties": {
             "accessToken": {
                 "type": "string",
-                "description": "The [personal access token](https://launchdarkly.com/docs/home/account/api#personal-tokens) or [service token](https://launchdarkly.com/docs/home/account/api#service-tokens) used to authenticate with LaunchDarkly. You can also set this with the `LAUNCHDARKLY_ACCESS_TOKEN` environment variable. You must provide either \u003cspan pulumi-lang-nodejs=\"`accessToken`\" pulumi-lang-dotnet=\"`AccessToken`\" pulumi-lang-go=\"`accessToken`\" pulumi-lang-python=\"`access_token`\" pulumi-lang-yaml=\"`accessToken`\" pulumi-lang-java=\"`accessToken`\" pulumi-lang-hcl=\"`access_token`\"\u003e`accessToken`\u003c/span\u003e or \u003cspan pulumi-lang-nodejs=\"`oauthToken`\" pulumi-lang-dotnet=\"`OauthToken`\" pulumi-lang-go=\"`oauthToken`\" pulumi-lang-python=\"`oauth_token`\" pulumi-lang-yaml=\"`oauthToken`\" pulumi-lang-java=\"`oauthToken`\" pulumi-lang-hcl=\"`oauth_token`\"\u003e`oauthToken`\u003c/span\u003e."
+                "description": "The [personal access token](https://launchdarkly.com/docs/home/account/api#personal-tokens) or [service token](https://launchdarkly.com/docs/home/account/api#service-tokens) used to authenticate with LaunchDarkly. You can also set this with the `LAUNCHDARKLY_ACCESS_TOKEN` environment variable. You must provide either \u003cspan pulumi-lang-nodejs=\"`accessToken`\" pulumi-lang-dotnet=\"`AccessToken`\" pulumi-lang-go=\"`accessToken`\" pulumi-lang-python=\"`access_token`\" pulumi-lang-yaml=\"`accessToken`\" pulumi-lang-java=\"`accessToken`\" pulumi-lang-hcl=\"`access_token`\"\u003e`accessToken`\u003c/span\u003e or \u003cspan pulumi-lang-nodejs=\"`oauthToken`\" pulumi-lang-dotnet=\"`OauthToken`\" pulumi-lang-go=\"`oauthToken`\" pulumi-lang-python=\"`oauth_token`\" pulumi-lang-yaml=\"`oauthToken`\" pulumi-lang-java=\"`oauthToken`\" pulumi-lang-hcl=\"`oauth_token`\"\u003e`oauthToken`\u003c/span\u003e.",
+                "secret": true
             },
             "apiHost": {
                 "type": "string",
@@ -2477,7 +2480,8 @@
             },
             "oauthToken": {
                 "type": "string",
-                "description": "An OAuth V2 token you use to authenticate with LaunchDarkly. You can also set this with the `LAUNCHDARKLY_OAUTH_TOKEN` environment variable. You must provide either \u003cspan pulumi-lang-nodejs=\"`accessToken`\" pulumi-lang-dotnet=\"`AccessToken`\" pulumi-lang-go=\"`accessToken`\" pulumi-lang-python=\"`access_token`\" pulumi-lang-yaml=\"`accessToken`\" pulumi-lang-java=\"`accessToken`\" pulumi-lang-hcl=\"`access_token`\"\u003e`accessToken`\u003c/span\u003e or \u003cspan pulumi-lang-nodejs=\"`oauthToken`\" pulumi-lang-dotnet=\"`OauthToken`\" pulumi-lang-go=\"`oauthToken`\" pulumi-lang-python=\"`oauth_token`\" pulumi-lang-yaml=\"`oauthToken`\" pulumi-lang-java=\"`oauthToken`\" pulumi-lang-hcl=\"`oauth_token`\"\u003e`oauthToken`\u003c/span\u003e."
+                "description": "An OAuth V2 token you use to authenticate with LaunchDarkly. You can also set this with the `LAUNCHDARKLY_OAUTH_TOKEN` environment variable. You must provide either \u003cspan pulumi-lang-nodejs=\"`accessToken`\" pulumi-lang-dotnet=\"`AccessToken`\" pulumi-lang-go=\"`accessToken`\" pulumi-lang-python=\"`access_token`\" pulumi-lang-yaml=\"`accessToken`\" pulumi-lang-java=\"`accessToken`\" pulumi-lang-hcl=\"`access_token`\"\u003e`accessToken`\u003c/span\u003e or \u003cspan pulumi-lang-nodejs=\"`oauthToken`\" pulumi-lang-dotnet=\"`OauthToken`\" pulumi-lang-go=\"`oauthToken`\" pulumi-lang-python=\"`oauth_token`\" pulumi-lang-yaml=\"`oauthToken`\" pulumi-lang-java=\"`oauthToken`\" pulumi-lang-hcl=\"`oauth_token`\"\u003e`oauthToken`\u003c/span\u003e.",
+                "secret": true
             }
         },
         "inputProperties": {
@@ -2488,7 +2492,8 @@
                     "environment": [
                         "LAUNCHDARKLY_ACCESS_TOKEN"
                     ]
-                }
+                },
+                "secret": true
             },
             "apiHost": {
                 "type": "string",
@@ -2518,7 +2523,8 @@
                     "environment": [
                         "LAUNCHDARKLY_OAUTH_TOKEN"
                     ]
-                }
+                },
+                "secret": true
             }
         },
         "methods": {
@@ -3947,7 +3953,8 @@
                     "additionalProperties": {
                         "type": "string"
                     },
-                    "description": "The destination-specific configuration. To learn more, read Destination-Specific Configs\n"
+                    "description": "The destination-specific configuration. To learn more, read Destination-Specific Configs\n",
+                    "secret": true
                 },
                 "envKey": {
                     "type": "string",
@@ -3992,7 +3999,8 @@
                     "additionalProperties": {
                         "type": "string"
                     },
-                    "description": "The destination-specific configuration. To learn more, read Destination-Specific Configs\n"
+                    "description": "The destination-specific configuration. To learn more, read Destination-Specific Configs\n",
+                    "secret": true
                 },
                 "envKey": {
                     "type": "string",
@@ -4036,7 +4044,8 @@
                         "additionalProperties": {
                             "type": "string"
                         },
-                        "description": "The destination-specific configuration. To learn more, read Destination-Specific Configs\n"
+                        "description": "The destination-specific configuration. To learn more, read Destination-Specific Configs\n",
+                        "secret": true
                     },
                     "envKey": {
                         "type": "string",
@@ -5025,7 +5034,8 @@
             "properties": {
                 "config": {
                     "type": "string",
-                    "description": "A JSON string representing the integration-specific configuration. The accepted fields are defined by the integration's manifest (for example connection and authentication details). Secret fields may be returned obfuscated by the API.\n"
+                    "description": "A JSON string representing the integration-specific configuration. The accepted fields are defined by the integration's manifest (for example connection and authentication details). Secret fields may be returned obfuscated by the API.\n",
+                    "secret": true
                 },
                 "configId": {
                     "type": "string",
@@ -5076,7 +5086,8 @@
             "inputProperties": {
                 "config": {
                     "type": "string",
-                    "description": "A JSON string representing the integration-specific configuration. The accepted fields are defined by the integration's manifest (for example connection and authentication details). Secret fields may be returned obfuscated by the API.\n"
+                    "description": "A JSON string representing the integration-specific configuration. The accepted fields are defined by the integration's manifest (for example connection and authentication details). Secret fields may be returned obfuscated by the API.\n",
+                    "secret": true
                 },
                 "envKey": {
                     "type": "string",
@@ -5117,7 +5128,8 @@
                 "properties": {
                     "config": {
                         "type": "string",
-                        "description": "A JSON string representing the integration-specific configuration. The accepted fields are defined by the integration's manifest (for example connection and authentication details). Secret fields may be returned obfuscated by the API.\n"
+                        "description": "A JSON string representing the integration-specific configuration. The accepted fields are defined by the integration's manifest (for example connection and authentication details). Secret fields may be returned obfuscated by the API.\n",
+                        "secret": true
                     },
                     "configId": {
                         "type": "string",

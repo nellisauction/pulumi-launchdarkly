@@ -143,7 +143,7 @@ export class IntegrationDeliveryConfiguration extends pulumi.CustomResource {
             if (args?.projectKey === undefined && !opts.urn) {
                 throw new Error("Missing required property 'projectKey'");
             }
-            resourceInputs["config"] = args?.config;
+            resourceInputs["config"] = args?.config ? pulumi.secret(args.config) : undefined;
             resourceInputs["envKey"] = args?.envKey;
             resourceInputs["integrationKey"] = args?.integrationKey;
             resourceInputs["name"] = args?.name;
@@ -154,6 +154,8 @@ export class IntegrationDeliveryConfiguration extends pulumi.CustomResource {
             resourceInputs["version"] = undefined /*out*/;
         }
         opts = pulumi.mergeOptions(utilities.resourceOptsDefaults(), opts);
+        const secretOpts = { additionalSecretOutputs: ["config"] };
+        opts = pulumi.mergeOptions(opts, secretOpts);
         super(IntegrationDeliveryConfiguration.__pulumiType, name, resourceInputs, opts);
     }
 }
