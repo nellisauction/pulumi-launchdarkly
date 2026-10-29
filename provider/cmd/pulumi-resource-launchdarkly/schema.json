@@ -7903,6 +7903,7 @@
                             "type": "string"
                         },
                         "description": "The set of configuration fields corresponding to the value defined for \u003cspan pulumi-lang-nodejs=\"`integrationKey`\" pulumi-lang-dotnet=\"`IntegrationKey`\" pulumi-lang-go=\"`integrationKey`\" pulumi-lang-python=\"`integration_key`\" pulumi-lang-yaml=\"`integrationKey`\" pulumi-lang-java=\"`integrationKey`\" pulumi-lang-hcl=\"`integration_key`\"\u003e`integrationKey`\u003c/span\u003e.\n",
+                        "secret": true,
                         "type": "object"
                     },
                     "id": {
@@ -8730,6 +8731,7 @@
                 "properties": {
                     "config": {
                         "description": "A JSON string representing the integration-specific configuration.\n",
+                        "secret": true,
                         "type": "string"
                     },
                     "configId": {

@@ -75,6 +75,19 @@ func Provider() tfbridge.ProviderInfo {
 				},
 			},
 		},
+		// The data source counterparts return the same credentials unmarked.
+		DataSources: map[string]*tfbridge.DataSourceInfo{
+			"launchdarkly_audit_log_subscription": {
+				Fields: map[string]*tfbridge.SchemaInfo{
+					"config": {Secret: tfbridge.True()},
+				},
+			},
+			"launchdarkly_integration_delivery_configuration": {
+				Fields: map[string]*tfbridge.SchemaInfo{
+					"config": {Secret: tfbridge.True()},
+				},
+			},
+		},
 		JavaScript: &tfbridge.JavaScriptInfo{
 			PackageName:          "@nellisauction/pulumi-launchdarkly",
 			RespectSchemaVersion: true,
