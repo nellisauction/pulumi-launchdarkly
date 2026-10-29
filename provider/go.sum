@@ -380,8 +380,8 @@ github.com/kylelemons/godebug v1.1.0 h1:RPNrshWIDI6G2gRW9EHilWtl7Z6Sb1BR0xunSBf0
 github.com/kylelemons/godebug v1.1.0/go.mod h1:9/0rRGxNHcop5bhtWyNeEfOS8JIWk580+fNqagV/RAw=
 github.com/launchdarkly/api-client-go/v25 v25.0.1 h1:5Rmly7KaXFRqoV5nNulvgFw0aOej2hRN53klZ4ose8s=
 github.com/launchdarkly/api-client-go/v25 v25.0.1/go.mod h1:l1zae2vQiI9t8UfVQeJLaK+ZKrQPv8ilpk7yZFuqFmE=
-github.com/launchdarkly/terraform-provider-launchdarkly v1.7.2-0.20261028120507-ebb166743915 h1:pKFFdzHqrf193EiTyEj9Vr0e22JPd/ZCd0jGJZmf4fs=
-github.com/launchdarkly/terraform-provider-launchdarkly v1.7.2-0.20261028120507-ebb166743915/go.mod h1:TvSRpUuYb95eLAOn5l7bDR3D0z5jY1lzMgbR4lTwcRc=
+github.com/launchdarkly/terraform-provider-launchdarkly v1.7.2-0.20261029181208-0595b8305763 h1:KGU/uthLUo3dK37GDfRZyk8MrxPyEXJoqAGpdGLc4PQ=
+github.com/launchdarkly/terraform-provider-launchdarkly v1.7.2-0.20261029181208-0595b8305763/go.mod h1:TvSRpUuYb95eLAOn5l7bDR3D0z5jY1lzMgbR4lTwcRc=
 github.com/lucasb-eyer/go-colorful v1.4.1 h1:1EO+WB73+EH8EVbzlrG3KLAfEypQWVHIBqlTf+2hNss=
 github.com/lucasb-eyer/go-colorful v1.4.1/go.mod h1:R4dSotOR9KMtayYi1e77YzuveK+i7ruzyGqttikkLy0=
 github.com/mattn/go-colorable v0.0.9/go.mod h1:9vuHe8Xs5qXnSaW/c/ABM9alt+Vo+STaOChaDxuIBZU=

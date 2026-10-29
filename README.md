@@ -57,7 +57,7 @@ The following configuration points are available for the `launchdarkly` provider
 
 ## Upstream
 
-This package bridges [launchdarkly/terraform-provider-launchdarkly](https://github.com/launchdarkly/terraform-provider-launchdarkly). The upstream repo tags `v3.x` releases without a `/v3` Go module path, so `provider/go.mod` pins it by commit pseudo-version (currently `v3.2.0` = `ebb166743915`). To upgrade:
+This package bridges [launchdarkly/terraform-provider-launchdarkly](https://github.com/launchdarkly/terraform-provider-launchdarkly). The upstream repo tags `v3.x` releases without a `/v3` Go module path, so `provider/go.mod` pins it by commit pseudo-version (currently `v3.3.0` = `0595b8305763`). To upgrade:
 
 ```bash
 cd provider && go get github.com/launchdarkly/terraform-provider-launchdarkly@<commit-sha> && go mod tidy
